@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>How to Design a Role-Based AI Training Curriculum</title>
+<meta name="title" content="How to Design a Role-Based AI Training Curriculum">
+<meta name="dc.title" content="How to Design a Role-Based AI Training Curriculum">
+<meta name="description" content="">
+<meta name="keywords" content="How to Design a Role-Based AI Training Curriculum">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><link rel="canonical" href="index.html">
+<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/" alt="How to Design a Role-Based AI Training Curriculum" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+ 	.t25ddc8caee5488f9a697b732037e31da .card .card-header .collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.t25ddc8caee5488f9a697b732037e31da .card .card-header span{
+font-size: 1.5rem;
+}
+.x6a1e2632383ef3829699dd723c7ac524{
+background-color:#fafafa!important;
+border-color:#fafafa!important;
+color:#000000!important;
+}
+.c6e508fd768f6b97e14867a97910fcfaa a{
+color:#ff841a!important;
+}
+footer a{
+color:#ffffff;
+text-decoration: underline;
+}
+.w38cdde942ded6f42da74dbfeacf94f33 a,.y9382168c28c3303dd3711a3c80212c1b a{
+color:#131313!important;
+text-decoration: underline !important;
+}
+.v464ef56de103afd351dd42adac6a4034 p,.{special_content1_class} a,.v464ef56de103afd351dd42adac6a4034 label{
+font-size:16px!important;
+}
+.v464ef56de103afd351dd42adac6a4034 .card-img{
+margin-bottom: 1.7rem;
+text-align: left;
+}
+.x857cf155eebf13b201d1dcb5ea57917e{
+max-height: 300px;
+overflow-y: auto;
+}
+.z81bda507a33b641925117bdb7305d0b5{
+font-size:45px!important;
+}
+.c8b58c89f0887b970267f46f94263433a{
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+.we796a4bd2d6589c649366c8afa7f984a a{
+color:#ff891f!important;
+}
+.w38cdde942ded6f42da74dbfeacf94f33 p,.w38cdde942ded6f42da74dbfeacf94f33 a,.w38cdde942ded6f42da74dbfeacf94f33 span,.w38cdde942ded6f42da74dbfeacf94f33 label{
+font-size:16px!important;
+}
+.t25ddc8caee5488f9a697b732037e31da .card .card-header{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: #3f43fd;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.nav-link{
+color: #000000;
+
+}
+.v464ef56de103afd351dd42adac6a4034 .vdb2cbb3b0f263db8514cb91d0f3ec351 *{
+color:#000000;
+}
+.c6e508fd768f6b97e14867a97910fcfaa{
+background:#eae8e4!important ;
+}
+.vdb2cbb3b0f263db8514cb91d0f3ec351 a{
+color:#ff891f!important;
+}
+.y9382168c28c3303dd3711a3c80212c1b p,.y9382168c28c3303dd3711a3c80212c1b span,.y9382168c28c3303dd3711a3c80212c1b label{
+font-size:16px!important;
+}
+footer *{
+font-size:16px !important;
+}
+.v464ef56de103afd351dd42adac6a4034 .td28e711427c72dda6669c55893f35311{
+margin-bottom: 1.5rem;
+}
+.ef5fb22c237468a3916f4119113866361{
+position: relative;
+min-height: 600px;
+}
+.y6cc19549ec30b3e04f7d04557bd7237c{
+text-decoration: underline!important;color:#ff8c22!important
+}
+.vdb2cbb3b0f263db8514cb91d0f3ec351 *{
+color:#000000;
+}
+.x5f8d164dc3eaafe03364fcc64a25b0a1{
+transition: all 0.3s;
+border-radius: 30px;
+}
+.v464ef56de103afd351dd42adac6a4034 .we796a4bd2d6589c649366c8afa7f984a *{
+color:#000000;
+}
+body{
+color: #313131;
+}
+.v464ef56de103afd351dd42adac6a4034 .c6e508fd768f6b97e14867a97910fcfaa *{
+color:#000000;
+}
+.w944e3fd7385374478961bbdd55d9d703 i{
+border-radius: 50%;
+width: 36.9px;
+line-height: 35px;
+text-align: center;
+height: 36.5px;
+}
+.z236ff877fd0bba2af99f716e50dae06a:hover,.x4441ff2ecf33020f9676788b10e45e4c:hover{
+background-size: 100% 100% !important;
+background: #ffc658!important;
+background-repeat: no-repeat !important;
+background-position: 0 90% !important;
+transition: background-size 0.2s ease-in !important;
+}
+.x72fc7eda0b672f72c1e7ae56736ad58d{
+background-color: #050505;
+font-size: 29.7px;
+height: 56.4px;
+min-width: 56.3px;
+padding: 0.7rem;
+padding-top: 12.6px;
+color: #fff !important;
+border: 1px solid #070707;
+border-radius: 50%;
+}
+html{
+scroll-behavior: smooth;
+}
+.y57b560b2ca3f45e50c8ba4b21a9329f5 a{
+color:#ff8b21!important;
+}
+.t25ddc8caee5488f9a697b732037e31da{
+position: relative;
+z-index: 1;
+}
+.y9382168c28c3303dd3711a3c80212c1b{
+background:#ffffff;
+}
+.c8b58c89f0887b970267f46f94263433a *{
+color: white !important;
+}
+.v464ef56de103afd351dd42adac6a4034 .c6e508fd768f6b97e14867a97910fcfaa{
+background:#bcd9df!important;
+}
+.y9382168c28c3303dd3711a3c80212c1b *{
+color:#070707!important;
+}
+.x5f8d164dc3eaafe03364fcc64a25b0a1:hover{
+box-shadow: 0 50.2px 50.1px -25px rgb(0 0 0 / 30%);
+transform: rotate(-2deg) scale(1.03);
+}
+.x4441ff2ecf33020f9676788b10e45e4c{
+font-weight: inherit;
+background-image: linear-gradient(120deg, #ffcb5d 0%, #ffd567 100%);
+background-repeat: no-repeat;
+background-size: 100% 30%;
+background-position: 0 90%;
+transition: background-size 0.2s ease-in;
+}
+.a4eb22cca505ad8672afedc324742a84a{
+font-size: 14px;
+}
+.y6fd67f79cc5bb8b3472f9da7130354ad{
+position: relative;
+z-index: 1;
+}
+.v0eb77bb9ba17fbde85d6cba3b4a9199f{
+width: 100%;
+max-height: 720px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.v464ef56de103afd351dd42adac6a4034 .row-item.we796a4bd2d6589c649366c8afa7f984a{
+background: #ccc9c9;
+}
+footer{
+background:#9b2a2a;
+color:#ffffff;
+}
+.t25ddc8caee5488f9a697b732037e31da .card .card-header .collapsed{
+color: #0e115e;
+}
+.c17655a4d9dc1b99c32e5f781b6079560{
+color: #424242;
+}
+.v464ef56de103afd351dd42adac6a4034 .row-item.y57b560b2ca3f45e50c8ba4b21a9329f5{
+background: #f9e6e4;
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+.w944e3fd7385374478961bbdd55d9d703 i:hover{
+background: white;
+color: #ffffff;!important;
+line-height: 35px;
+border-radius: 50%;
+width: 37px;
+text-align: center;
+height: 36.8px;
+}
+.y9382168c28c3303dd3711a3c80212c1b a{
+font-size:16px;
+}
+.t25ddc8caee5488f9a697b732037e31da .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.wfa369af0e76e45a7975d0964dbd778dd{
+font-size:16px!important;
+color: #616161;
+}
+.w38cdde942ded6f42da74dbfeacf94f33{
+background:#eeece8;
+color:#131313;
+}
+.v464ef56de103afd351dd42adac6a4034 .row-item.vdb2cbb3b0f263db8514cb91d0f3ec351{
+background: #f3f1ed;
+}
+.v464ef56de103afd351dd42adac6a4034 .vdb2cbb3b0f263db8514cb91d0f3ec351{
+background:#eae8e4!important ;
+}
+.wda58266df00b8a2b9d4dc3f6495c0f03{
+font-size: 19.6px;
+font-weight: bold;
+}
+.f389f1706dbce0a6e17cc7d2ae4bb1dbe{
+color: #9b9b9b;
+font-size: 20.3px;
+margin-bottom: 21.4px;
+}
+.t25ddc8caee5488f9a697b732037e31da .card .card-body{
+padding: 1.75rem 2rem;
+}
+.e753038e9a1d35668ae101428c68dda38{
+font-size: 2rem !important;
+}
+a:hover{
+color:#ffffff;background:#ffc658!important;
+}
+.v464ef56de103afd351dd42adac6a4034 .y57b560b2ca3f45e50c8ba4b21a9329f5 *{
+color:#000000;
+}
+.v464ef56de103afd351dd42adac6a4034 h4{
+font-size:24px!important;
+}
+a{
+text-decoration: none;
+}
+iframe{
+border: none!important;
+}
+.v464ef56de103afd351dd42adac6a4034 .row-item{
+padding: 3rem;
+padding-top: 3.7rem;
+height: 100%;
+}
+.v464ef56de103afd351dd42adac6a4034 .row-item.c6e508fd768f6b97e14867a97910fcfaa{
+background: #bddae0;
+}
+.btn-md{
+padding: 14.6px 29.6px;
+border-radius: 0;
+}
+.v464ef56de103afd351dd42adac6a4034 .we796a4bd2d6589c649366c8afa7f984a{
+background:#c1bebe!important;
+}
+img{
+border-radius:20px
+}
+.t25ddc8caee5488f9a697b732037e31da .card:last-child{
+margin-bottom: 0;
+}
+*{
+font-family: 'Poppins', sans-serif;
+}
+.v464ef56de103afd351dd42adac6a4034 .y57b560b2ca3f45e50c8ba4b21a9329f5{
+background:#eddad8!important;
+}
+.navbar a{
+font-size: 17.9px!important;
+font-weight: bold;
+}
+.nav-item{
+padding-left:8.2px;
+padding-right:8.4px;
+padding-top:5.1px;
+padding-bottom:5.5px;
+}
+.b950dc12e7f0e62547b2bb67d514d49e2{
+font-size: 45px!important;
+}
+.t25ddc8caee5488f9a697b732037e31da .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+ </style>
+<style type="text/css"> 
+   .parallax-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 500px; /* Adjust as needed */
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+
+.parallax-content {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:20px 40px;
+    margin: 50px auto; /* Creates space for parallax effect */
+    max-width: 80%;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+.img-fluid{
+	max-height: 400px
+}
+@media only screen and (max-width:1000px) {
+.ef5fb22c237468a3916f4119113866361 img{
+position: initial!important;
+}
+
+.z81bda507a33b641925117bdb7305d0b5 {
+font-size: 20px;
+}
+.f389f1706dbce0a6e17cc7d2ae4bb1dbe {
+font-size: 15px !important;
+}
+.wf461a5850277360d591e7c7d9607acfc{
+padding-bottom: 0px !important;
+}
+} 
+.content-image-below {
+    margin: 20px 0;
+    text-align: center;
+}
+.image-align-left ol,.image-align-left ul{
+  margin-left: 51%;
+}
+ 
+/* For background image */
+.content-with-bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    position: relative;
+}
+
+.content-over-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+.content-image-below img,.content-with-side-images img,{
+	max-height: 500px!important;
+
+}
+ 
+ 
+
+/* Text container */
+.text-container {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 1rem;
+}
+ 
+
+ /* Main content container */
+.content-with-side-images {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Headers should always be full width */
+.content-with-side-images h4 {
+    width: 100%;
+    clear: both;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* Regular paragraphs should be full width by default */
+.content-with-side-images p {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Image-text pair container */
+.image-text-pair {
+    width: 100%;
+    margin:  0px 0;
+   
+}
+
+/* Image container - floated */
+.image-container {
+    width: 50%;
+    
+    box-sizing: border-box;
+ 
+}
+.image-container img:hover{
+
+box-shadow: 0 49.6px 50.3px -25px rgb(0 0 0 / 30%);
+    transform: rotate(-2deg) scale(1.03);
+}
+.image-container img{
+transition: all 0.3s;
+}
+
+/* Left-aligned image */
+.image-align-left .image-container {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+    padding-right: 40px;
+}
+
+/* Right-aligned image */
+.image-align-right .image-container {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+
+    padding-left: 40px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ 
+
+/* Clearfix */
+.clearfix {
+    clear: both;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        float: none !important;
+        margin: 0 0 20px 0 !important;
+        padding: 0;
+    }
+    
+    .text-flow {
+        display: block;
+    }
+} 
+  
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0px;
+    left: 100%;
+    margin-top: -16px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+  
+}
+
+/* Smart positioning for right-edge dropdowns */
+.dropdown-menu-right .dropdown-submenu>.dropdown-menu,
+.nav-item:last-child .dropdown-submenu>.dropdown-menu,
+.nav-item:nth-last-child(2) .dropdown-submenu>.dropdown-menu {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: -1px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+/* For left-positioned dropdowns, reverse the arrow */
+.dropdown-menu-right .dropdown-submenu>a:after,
+.nav-item:last-child .dropdown-submenu>a:after,
+.nav-item:nth-last-child(2) .dropdown-submenu>a:after {
+    float: left;
+    border-width: 5px 5px 5px 0;
+    border-left-color: transparent;
+    border-right-color: #ccc;
+    margin-left: -10px;
+    margin-right: 0;
+}
+
+.dropdown-menu-right .dropdown-submenu:hover>a:after,
+.nav-item:last-child .dropdown-submenu:hover>a:after,
+.nav-item:nth-last-child(2) .dropdown-submenu:hover>a:after {
+    border-right-color: #fff;
+    border-left-color: transparent;
+}
+ 
+
+.multi-column-dropdown .dropdown-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .multi-column-dropdown {
+      
+        width: 100%;
+    }
+    
+    .dropdown-submenu>.dropdown-menu {
+        position: static;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/* Use hover only where it exists */
+@media (hover:hover) {
+  .dropdown-submenu:hover > .dropdown-menu { display:block; }
+}
+
+/* Nested dropdowns should show when .show is present (Bootstrap only sets this for top-level) */
+.dropdown-menu .dropdown-menu { display:none; }
+.dropdown-menu .dropdown-menu.show { display:block; }
+
+/* Mobile layout: stack submenus and remove weird offsets */
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    position: static;          /* keeps the menu within the flow so it won't render off-screen */
+    float: none;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .dropdown-submenu > .dropdown-menu {
+    margin-left: 0;
+    max-height: 60vh;          /* scroll if long */
+    overflow-y: auto;
+  }
+}
+
+</style>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "ProfessionalService","name": "Authority Solutions®",
+"sameAs": ["https://www.brownbook.net/business/51330844/authority-solutions-houston","https://botw.org/listing/authority-solutions-houston/","https://www.trepup.com/store/authority-solutions---houston-319745449740995/profile","https://www.callupcontact.com/b/businessprofile/Authority_Solutions_Houston/8344406","http://www.askmap.net/location/6423497/united-states/authority-solutions-houston","https://agreatertown.com/houston-tx/authority-solutions-houston-0001310643301","https://www.cityfos.com/company/Authority-Solutions-in-Houston-TX-22884195.htm","https://www.whodoyou.com/biz/2135287/authority-solutions-houston-tx-us","https://www.find-us-here.com/businesses/Authority-Solutions-Houston-Houston-Texas-USA/33748157/","http://www.place123.net/place/authority-solutions%C2%AE-houston-houston-united-states","https://houston-tx.geebo.com/services/view/id/1918395-authority-solutions-houston-/","https://ebusinesspages.com/Authority-Solutions-and-%23174%3b-Houston_dyr4r.co","https://yellow.place/en/authority-solutions-houston-usa","https://us.enrollbusiness.com/BusinessProfile/166419/Authority-Solutions-Houston-Houston-TX-77070","https://citysquares.com/cat/tx/houston/willowbrook/internet-services","https://www.n49.com/biz/998441/authority-solutions-houston-tx-houston-8300-farm-to-market-1960-rd-w-450-4554/","https://www.cylex.us.com/company/authority-solutions%C2%AE-25094410.html","https://ezlocal.com/tx/houston/search-engine-optimization/094076373","https://www.merchantcircle.com/authority-solutions-houston-tx","https://www.golocal247.com/biz/authority-solutions-/houston-tx/YEXT789939","https://www.neustarlocaleze.biz/app/directory/900444350/","https://local-listings.data-axle.com/places/4QTOWR2W","https://www.yellowpages.com/nationwide/mip/authority-solutions-504932750","https://www.superpages.com/houston-tx/bpp/authority-solutions-504932750","https://www.waze.com/en/live-map/directions/us/tx/houston/authority-solutions-or-houston?to=place.ChIJ06-eKPvNQIYRh9TSHRvVDyU","https://www.facebook.com/authoritysolutions/","https://www.linkedin.com/company/authority-solutions/","https://www.instagram.com/authority_solutions/","https://www.youtube.com/@authoritysolutions/","https://x.com/TheSEOAuthority"],"url": "",
+"address": {
+"@type": "PostalAddress"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","significantLink": "https://www.authoritysolutions.com/",
+"relatedLink": "https://www.authoritysolutions.com/","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"sameAs": ["https://www.authoritysolutions.com/"],"url": "index.html","additionalType": "https://www.authoritysolutions.com/","name": "","identifier": "https://www.authoritysolutions.com/","description": "",
+"disambiguatingDescription": ""},
+"accessibilitySummary": ""},
+"mainEntityOfPage": "https://www.authoritysolutions.com/","keywords": [""],
+"award": ["Best "],
+"teaches": [""],
+"educationalUse": [""],
+"text": [""],
+"workExample": {
+"about": {"sameAs": ["https://www.authoritysolutions.com/"],"url": "index.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "index.html",
+"sameAs": ["https://www.brownbook.net/business/51330844/authority-solutions-houston","https://botw.org/listing/authority-solutions-houston/","https://www.trepup.com/store/authority-solutions---houston-319745449740995/profile","https://www.callupcontact.com/b/businessprofile/Authority_Solutions_Houston/8344406","http://www.askmap.net/location/6423497/united-states/authority-solutions-houston","https://agreatertown.com/houston-tx/authority-solutions-houston-0001310643301","https://www.cityfos.com/company/Authority-Solutions-in-Houston-TX-22884195.htm","https://www.whodoyou.com/biz/2135287/authority-solutions-houston-tx-us","https://www.find-us-here.com/businesses/Authority-Solutions-Houston-Houston-Texas-USA/33748157/","http://www.place123.net/place/authority-solutions%C2%AE-houston-houston-united-states","https://houston-tx.geebo.com/services/view/id/1918395-authority-solutions-houston-/","https://ebusinesspages.com/Authority-Solutions-and-%23174%3b-Houston_dyr4r.co","https://yellow.place/en/authority-solutions-houston-usa","https://us.enrollbusiness.com/BusinessProfile/166419/Authority-Solutions-Houston-Houston-TX-77070","https://citysquares.com/cat/tx/houston/willowbrook/internet-services","https://www.n49.com/biz/998441/authority-solutions-houston-tx-houston-8300-farm-to-market-1960-rd-w-450-4554/","https://www.cylex.us.com/company/authority-solutions%C2%AE-25094410.html","https://ezlocal.com/tx/houston/search-engine-optimization/094076373","https://www.merchantcircle.com/authority-solutions-houston-tx","https://www.golocal247.com/biz/authority-solutions-/houston-tx/YEXT789939","https://www.neustarlocaleze.biz/app/directory/900444350/","https://local-listings.data-axle.com/places/4QTOWR2W","https://www.yellowpages.com/nationwide/mip/authority-solutions-504932750","https://www.superpages.com/houston-tx/bpp/authority-solutions-504932750","https://www.waze.com/en/live-map/directions/us/tx/houston/authority-solutions-or-houston?to=place.ChIJ06-eKPvNQIYRh9TSHRvVDyU","https://www.facebook.com/authoritysolutions/","https://www.linkedin.com/company/authority-solutions/","https://www.instagram.com/authority_solutions/","https://www.youtube.com/@authoritysolutions/","https://x.com/TheSEOAuthority"] }
+},
+"hasPart":[
+]
+}
+</script> 
+</head>
+
+<body><nav class="navbar-expand-lg navbar">
+<a class="navbar-brand" href="index.html"  ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon  fa fa-bars"></span></button><div class="navbar-collapse collapse" id="navbarSupportedContent">
+<ul class="d-flex ml-auto navbar-nav align-items-center">        
+            <!-- Show all double menus if within limit -->
+                                <li class="nav-item dropdown dropdown-hover">
+                <a class="z236ff877fd0bba2af99f716e50dae06a nav-link dropdown-toggle" href="javascript:;" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-expanded="false">
+                    AI Training                </a>
+                <div class=" dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown0">
+                                                                    <a class="dropdown-item" href="index.html" >
+                            How to Design a Role-Based AI Training Curriculum                        </a>
+                                                                    <a class="dropdown-item" href="prompt-engineering-fundamentals-for-business-teams.html" >
+                            Prompt Engineering Fundamentals for Business Teams                        </a>
+                                                                    <a class="dropdown-item" href="ai-governance-policies-for-organizations.html" >
+                            AI Governance Policies for Organizations                        </a>
+                                                                    <a class="dropdown-item" href="measuring-ai-training-roi-from-adoption-to-productivity.html" >
+                            Measuring AI Training ROI From Adoption to Productivity                        </a>
+                                                                    <a class="dropdown-item" href="building-an-internal-ai-champions-program.html" >
+                            Building an Internal AI Champions Program                        </a>
+                                    </div>
+            </li>
+            
+    </ul>
+</div>
+</nav>
+   
+<div class="ef5fb22c237468a3916f4119113866361 wf461a5850277360d591e7c7d9607acfc container-fluid">
+<img  src="img/index.jpg" width="100%" class="v0eb77bb9ba17fbde85d6cba3b4a9199f" alt="How to Design a Role-Based AI Training Curriculum" title="How to Design a Role-Based AI Training Curriculum Authority Solutions®">
+</div><div class="y9382168c28c3303dd3711a3c80212c1b container-fluid"><div class="pb-5 row ">
+<div class="container pt-3">
+<div class="row">
+<div class="text-center col-lg-12 " id="">
+<h1 class="mb-0 text-white z81bda507a33b641925117bdb7305d0b5">How to Design a Role-Based AI Training Curriculum</h1></div>
+<div class=" m-auto col-lg-12">
+<div class="content">
+
+<div class="content-with-side-images"><p><em>By the Authority Solutions® Editorial Team | Published: April 2026 | Last Updated: April 2026</em></p><h2>The Case for Role-Based AI Training Over Generic AI Workshops</h2><p>Generic AI training fails because it treats artificial intelligence as a single skill that applies uniformly across every role in an organization. It does not. A marketing manager using AI to generate campaign copy operates in a fundamentally different context than a financial analyst using AI to summarize earnings reports or an operations coordinator using AI to automate approval workflows. The tools may overlap, but the applications, quality standards, risk considerations, and productivity gains are role-specific. Training that ignores these differences produces broad awareness without actionable capability - employees who understand what AI is but cannot apply it effectively to their actual daily work.</p><p>Role-based AI training solves this by designing separate learning tracks for each functional group within the organization, teaching the specific AI tools, prompt patterns, workflow integrations, and quality verification methods that each role actually needs. The result is faster adoption, higher productivity impact, and fewer AI-related errors than generic programs deliver.</p><p>This guide covers how to design a role-based AI training curriculum from needs assessment through delivery, including how to identify role-specific AI applications, structure learning progressions, build practical exercises, and measure training effectiveness across departments.</p><h2>Conducting the Training Needs Assessment</h2><p>Before designing any training content, assess where your organization stands on AI capability and where each department needs to go.</p><h3>The Three-Dimension Survey</h3><p>Survey team members across three dimensions. Awareness: can they name the AI tools available to them and describe what those tools do? Usage: are they actively using AI tools in their daily work, and if so, for which tasks? Confidence: how comfortable are they evaluating whether AI output is accurate, appropriate, and ready for use without further editing?</p><p>The survey reveals distinct capability clusters. Some teams will be high-awareness but low-usage - they know AI exists but have not integrated it into workflows. Others will be high-usage but low-confidence - they use AI frequently but cannot reliably assess output quality, creating risk exposure the organization may not be aware of. A few individuals will score high across all three dimensions - these are your candidate AI champions who can support ongoing skill development after formal training concludes.</p><h3>Role-Task Mapping</h3><p>For each role, document the five to ten most time-consuming recurring tasks. Then evaluate each task against two criteria: is the task AI-applicable (could an AI tool meaningfully assist with any portion of the task), and what is the productivity multiplier (how much time would effective AI usage save per execution). Tasks that are both AI-applicable and high-multiplier become the training priority targets for that role. This mapping ensures training focuses on the applications that produce measurable productivity improvement rather than teaching theoretical capabilities the team will never use.</p><h2>Designing the Four Training Tracks</h2><p>Most organizations need three to four role-based tracks that address fundamentally different AI interaction patterns.</p><h3>Track 1: Executive AI Literacy (4–8 Hours)</h3><p>Executives and senior leaders need strategic understanding without operational depth. This track covers AI capability assessment - what AI can and cannot do for your specific business context. Technology evaluation frameworks - how to assess AI vendor claims, compare platforms, and make procurement decisions. ROI projection methodology - how to estimate the financial impact of AI investments before committing resources. Risk and governance awareness - what liability, privacy, and compliance considerations apply to AI deployment in your industry. And workforce implications - how AI changes role compositions and what that means for hiring, training, and organizational design. The executive track is not hands-on tool training - it is strategic decision-support education.</p><h3>Track 2: Marketing and Sales AI (12–16 Hours)</h3><p>Marketing and sales teams represent the highest-volume AI usage opportunity in most organizations. Their track covers prompt engineering for content creation - writing briefs, generating drafts, iterating on AI output to match brand voice and messaging standards. AI-assisted research - using AI to summarize competitive intelligence, analyze market trends, and synthesize customer feedback data. CRM AI features - predictive lead scoring, automated data enrichment, conversational intelligence, and pipeline analysis. Email and outreach personalization - using AI to customize communication at scale without sacrificing relevance or authenticity. And quality control protocols - fact-checking AI-generated content, detecting hallucinations, maintaining brand voice consistency, and establishing review workflows before external distribution. The single highest-leverage skill within this track is prompt engineering - our dedicated guide on prompt engineering fundamentals covers the techniques in depth.</p><div class="image-text-pair image-align-left"><div class="image-container"><img src="img/building-internal-ai-champions-program-team-leaders.jpg" alt="" class="img-fluid"></div><div class="text-flow"><h3>Track 3: Operations AI (12–16 Hours)</h3><p>Operations, finance, HR, and administrative teams use AI differently - their applications center on data processing, workflow automation, and reporting rather than content generation. This track covers spreadsheet and data analysis automation - using AI to clean data, identify patterns, generate formulas, and create visualizations. Document processing - summarizing reports, extracting information from contracts, generating meeting notes from transcripts. Workflow automation - building automated sequences using platforms like Zapier, Make, or Power Automate with AI decision layers. Reporting automation - generating formatted reports from raw data sources. And compliance considerations - understanding which data categories can and cannot be processed through AI systems based on organizational policy and regulatory requirements. Our resource on AI governance policies for organizations provides the policy framework that supports this track.</p></div></div><h3>Track 4: Technical AI (20–40 Hours)</h3><p>IT, development, and data teams need the deepest technical training. Their track covers API integration - connecting AI services (OpenAI, Anthropic, Google) to internal systems. Custom model deployment - fine-tuning, prompt chaining, and RAG (retrieval-augmented generation) implementations. Data pipeline design - building data flows that prepare organizational data for AI consumption. Security architecture - protecting sensitive data in AI processing workflows, managing API keys and access controls, implementing data loss prevention measures. And evaluation methodology - measuring AI model performance, detecting drift, and establishing monitoring systems for production AI deployments.</p><h2>Structuring the Learning Progression</h2><p>Within each track, structure the learning progression from foundational concepts through applied practice to independent production use.</p><p><strong>Learning Progression Model</strong></p> <table style="width:100%; border-collapse:collapse; margin:0;"> <thead><tr style="background:#f0f0f0; color:#000;"> <th style="border:1px solid #ccc; padding:10px; text-align:left;">Phase</th> <th style="border:1px solid #ccc; padding:10px; text-align:left;">Focus</th> <th style="border:1px solid #ccc; padding:10px; text-align:left;">Duration</th> <th style="border:1px solid #ccc; padding:10px; text-align:left;">Outcome</th> </tr></thead> <tbody> <tr style="background:#f9f9f9;"><td style="border:1px solid #ccc; padding:8px;">Foundation</td><td style="border:1px solid #ccc; padding:8px;">How AI works, capabilities, limitations, tool orientation</td><td style="border:1px solid #ccc; padding:8px;">2–4 hours</td><td style="border:1px solid #ccc; padding:8px;">Calibrated expectations</td></tr> <tr><td style="border:1px solid #ccc; padding:8px;">Guided Practice</td><td style="border:1px solid #ccc; padding:8px;">Instructor-led exercises using real work scenarios</td><td style="border:1px solid #ccc; padding:8px;">4–8 hours</td><td style="border:1px solid #ccc; padding:8px;">Applied skill development</td></tr> <tr style="background:#f9f9f9;"><td style="border:1px solid #ccc; padding:8px;">Independent Application</td><td style="border:1px solid #ccc; padding:8px;">Self-directed use on actual tasks with support available</td><td style="border:1px solid #ccc; padding:8px;">2–4 weeks</td><td style="border:1px solid #ccc; padding:8px;">Workflow integration</td></tr> <tr><td style="border:1px solid #ccc; padding:8px;">Advanced Techniques</td><td style="border:1px solid #ccc; padding:8px;">Multi-step workflows, prompt chaining, automation building</td><td style="border:1px solid #ccc; padding:8px;">4–8 hours</td><td style="border:1px solid #ccc; padding:8px;">Productivity multiplication</td></tr> </tbody></table> <p>The critical transition is from guided practice to independent application. This is where most training programs fail - they deliver workshop content but provide no structured support during the period when participants attempt to apply new skills to real work. Bridge this gap with weekly office hours, a shared Slack channel for AI questions, and a prompt template library that gives participants starting points for common tasks.</p><h2>Building the Prompt Template Library</h2><p>A prompt template library is a collection of pre-built, tested prompts customized for your organization's specific tasks, tools, and communication standards. Templates reduce the friction of AI adoption by giving team members ready-to-use starting points rather than requiring them to craft prompts from scratch for every task.</p><p>Organize templates by department and task type. Marketing templates might include blog post drafts, email subject line variations, social media post generation, competitor analysis summaries, and campaign performance interpretation prompts. Sales templates might include prospect research briefs, follow-up email personalization, objection handling preparation, and meeting summary generation. <a class="ua945b3cfff701242f191352919b37131" href="prompt-engineering-fundamentals-for-business-teams.html">Prompt Engineering Fundamentals for Business Teams</a> . Operations templates might include data cleaning instructions, report formatting, process documentation, and exception handling decision support.</p><p>Each template should include the prompt text, the expected output format, the AI tool it was designed for, example inputs and outputs, and notes on when to use versus when not to use the template. The library is a living document - team members contribute new templates as they discover effective prompts during their daily work, and underperforming templates are revised or retired based on usage data.</p><h2>The AI Champions Model for Sustained Development</h2><p>Formal training events build initial capability, but sustained AI skill development requires ongoing support structures. Organizations that invest in structured <a href="https://pub-499eea2cda0047969176dbc9c7f38e96.r2.dev/authority-solutions/building-ai-literacy-across-your-workforce.html">AI training for business teams</a> find that the champions model is the most effective mechanism for maintaining momentum between formal sessions. The AI Champions model designates one to two individuals per department who receive advanced training and serve as first-line AI support for their colleagues. Champions answer day-to-day questions about AI tool usage, share new techniques and templates, identify training gaps that should be addressed in future sessions, and provide feedback on which AI applications are producing value and which are underperforming. Our guide on building an internal AI champions program provides the complete implementation framework.</p><h2>Measuring Training Effectiveness</h2><p>Track four metrics to evaluate whether training investments produce tangible operational improvement. Tool adoption rate measures the percentage of trained employees actively using AI tools at 30, 60, and 90 days post-training - declining adoption signals that the training content did not translate into practical daily application. Time savings tracks documented reduction in hours spent on tasks where AI tools have been deployed. Output quality monitors error rates in AI-assisted deliverables compared to pre-training baselines. And employee confidence reassesses the three-dimension survey (awareness, usage, confidence) at regular intervals to measure skill development trajectory. For a complete measurement methodology, see our detailed guide on measuring AI training ROI.</p><h3>How much does a role-based AI training program cost?</h3><p>Internal programs using existing staff as trainers cost primarily in time - 40 to 80 hours of curriculum development plus delivery hours. External training providers typically charge $500 to $2,000 per participant for multi-day workshops, or $5,000 to $25,000 for organization-wide programs. The ROI calculation should compare training investment against the productivity gains documented through post-training measurement - most organizations find that training investment pays back within 60 to 90 days through time savings alone.</p><h3>Should we train everyone simultaneously or roll out in phases?</h3><p>Phased rollout produces better results. Start with the department that has the highest volume of AI-automatable tasks (typically marketing or sales operations), deliver training, measure results, refine the curriculum based on feedback, then expand to the next department. This approach generates internal success stories that build enthusiasm for subsequent cohorts and allows the training team to improve content between phases.</p><div class="image-text-pair image-align-right"><div class="image-container"><img src="img/ai-training-program-corporate-workshop-session.jpg" alt="" class="img-fluid"></div><div class="text-flow"><h3>What if different team members have vastly different baseline AI skills?</h3><p>The needs assessment survey addresses this by identifying skill clusters within each role group. If a department contains both AI novices and experienced users, split the foundation phase - novices attend the full foundation module while experienced users skip to guided practice. The advanced techniques phase brings both groups together, with experienced users often serving as peer coaches during exercises.</p></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-2 py-4 c6e508fd768f6b97e14867a97910fcfaa row-item container w38cdde942ded6f42da74dbfeacf94f33">
+<div class="col-md-12 vdb2cbb3b0f263db8514cb91d0f3ec351"> 
+<div><i class="x72fc7eda0b672f72c1e7ae56736ad58d fa fa-bars text-center"></i></div>
+<h4 >Citations and other links</h4>
+<ul>
+<li><a href="https://www.yellowpages.com/nationwide/mip/authority-solutions-504932750">https://www.yellowpages.com/nationwide/mip/authority-solutions-504932750</a></li>
+<li><a href="https://www.superpages.com/houston-tx/bpp/authority-solutions-504932750">https://www.superpages.com/houston-tx/bpp/authority-solutions-504932750</a></li>
+<li><a href="https://www.waze.com/en/live-map/directions/us/tx/houston/authority-solutions-or-houston?to=place.ChIJ06-eKPvNQIYRh9TSHRvVDyU">https://www.waze.com/en/live-map/directions/us/tx/houston/authority-solutions-or-houston?to=place.ChIJ06-eKPvNQIYRh9TSHRvVDyU</a></li>
+</ul> 
+</div>
+</div>
+<div class="container-fluid pb-4">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h4 >Check our other pages :</h4>
+<ul>
+<li>
+<a href="index.html" >Prompt Engineering Fundamentals for Business Teams</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><footer>
+<div class="pt-5 py-4 container" >
+<div class="row"><div class="col-lg-3">
+<p>Authority Solutions®</p>
+</div><div class="col-lg-3"><p><a class="z236ff877fd0bba2af99f716e50dae06a" href="sitemap.html" rel="nofollow">Sitemap</a></p>
+<p><a class="z236ff877fd0bba2af99f716e50dae06a" href="privacy-policy.html" rel="nofollow">Privacy Policy</a></p>
+</p>
+</div><div class="col-lg-3">
+<div>
+<p>Follow us</p>
+<a href="https://www.facebook.com/authoritysolutions/" class="w944e3fd7385374478961bbdd55d9d703 facebook" ><i class="fa fa-facebook"></i></a>
+<a href="https://www.linkedin.com/company/authority-solutions/" class="w944e3fd7385374478961bbdd55d9d703 pinterest" ><i class="fa fa-linkedin"></i></a>
+<a href="https://www.instagram.com/authority_solutions/" class="w944e3fd7385374478961bbdd55d9d703 google-plus" ><i class="fa fa-instagram"></i></a>
+<a href="https://www.youtube.com/@authoritysolutions/" class="youtube w944e3fd7385374478961bbdd55d9d703" ><i class="fa fa-youtube"></i></a>
+<a href="https://x.com/TheSEOAuthority" class="twitter w944e3fd7385374478961bbdd55d9d703" ><i class="fa fa-twitter"></i></a>
+</div>
+</div></div>
+</div>
+</footer>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+ <script>
+(function() {
+  // Works with both BS4 (data-toggle events) and BS5
+  var $ = window.jQuery;
+
+  // Toggle nested submenu on click/tap
+  $(document).on('click', '.dropdown-submenu > a', function(e) {
+    var $toggle = $(this);
+    var $submenu = $toggle.next('.dropdown-menu');
+
+    // If there isn't a submenu, behave like a normal link
+    if (!$submenu.length) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Close sibling submenus at the same level
+    $toggle.parent('.dropdown-submenu')
+      .siblings('.dropdown-submenu')
+      .find('>.dropdown-menu.show')
+      .removeClass('show');
+
+    // Toggle this submenu
+    $submenu.toggleClass('show');
+
+    // Keep parent dropdown open
+    $toggle.closest('.dropdown-menu').addClass('show');
+
+    // Accessibility state
+    $toggle.attr('aria-expanded', $submenu.hasClass('show') ? 'true' : 'false');
+  });
+
+  // When the top-level dropdown closes, close all nested submenus
+  $(document).on('hidden.bs.dropdown', '.dropdown', function() {
+    $(this).find('.dropdown-menu.show').removeClass('show');
+  });
+})();
+</script>
+</body>
+</html>
